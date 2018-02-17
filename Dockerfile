@@ -7,4 +7,4 @@ COPY gamerstroop/Gemfile.lock /gamerstroop/Gemfile.lock
 RUN bundle install
 COPY gamerstroop /gamerstroop
 EXPOSE 3000
-CMD [ "bundle", "exec", "puma", "-C", "config/puma.rb" "unix:///tmp/gamerstroop.sock" ]
+CMD [ "bundle", "exec", "puma", "-C", "config/puma.rb" ]
